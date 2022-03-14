@@ -1,0 +1,313 @@
+body{
+    overflow-x: hidden;
+}
+
+/*************** navbar style ****************/
+.navbar, .container-fluid{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.nav-link{
+    color: #fff !important;
+}
+.navbar-brand{
+    background-color: #009688;
+    padding: 0 15px;
+    margin-right: 0 !important;
+}
+.nav-item{
+    transition: all 0.4s;
+}
+.nav-item:hover{
+    background: #fff;
+}
+.navbar-brand:hover, .nav-item:last-child:hover{
+    background-color: gray;
+}
+.nav-item:hover .nav-link{
+    color: #000 !important;
+}
+.navbar-nav .dropdown:hover .dropdown-menu{
+    display: block;
+}
+form.d-flex i{
+    color: #fff;
+    padding: 0 15px;
+}
+
+/*************** header style ****************/
+.slider{
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/sailboat.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.link-on-slider{
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+}
+.link-on-slider:hover{
+    background-color: #009688;
+    opacity: 0.9;
+    color: #000;
+}
+
+/*************** team section style ****************/
+.team-section{
+    padding: 40px 0;
+}
+.section-title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.user{
+    text-align: center;
+}
+.user img{
+    width: 45%;
+    border-radius: 50%;
+}
+.user img:hover{
+    filter: grayscale(70%);
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+.user h3{
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+/*************** work section style ****************/
+.work-section{
+    padding: 50px 20px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work-section .first-work-item{
+    color: #fff;
+    padding-top: 20px;
+}
+.work-section .work-item{
+    width: 98%;
+    background-color: #fff;
+}
+.work-section .work-item img{
+    width: 100%;
+}
+.work-section .work-item .all-text{
+    padding: 5px 10px;
+}
+.work-section .work-item .all-text h2,
+.work-section .work-item .all-text h4{
+    font-weight: normal;
+}
+
+.work-section .work-item .img{
+    position: relative;
+}
+.work-section .work-item .img::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 1s;
+}
+.work-section .work-item:hover .img::after{
+    opacity: 0.7;
+}
+
+
+/*************** pricing section style ****************/
+.pricing-section{
+    padding: 60px 20px;
+}
+.pricing-section .section-title h2{
+    font-weight: normal;
+}
+.price-item ul{
+    width: 95%;
+    padding: 0;
+}
+.price-item ul:hover{
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+.price-item ul li{
+    border-width: 1px 1px 0 1px;
+    border-color: #ccc;
+    border-style: solid;
+    text-align: center;
+}
+.price-item ul li.list-item-signup{
+    border-bottom: 1px solid #ccc;
+    background-color: #F0F0F0;
+}
+.price-item ul li.list-item-signup button{
+    padding: 10px 20px;
+    background: #009688;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s;
+}
+.price-item ul li.list-item-signup button:hover{
+    background: #ccc;
+    color: #000;
+}
+.price-item ul li{
+    padding: 15px 0;
+}
+.price-item ul li.list-item-title{
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+}
+.price-item ul li.list-item-title-gray{
+    background-color: #666666;
+}
+.price-item ul li span.bold-txt{
+    font-weight: bold;
+}
+.price-item ul li.list-item .line-1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.price-item ul li.list-item .line-2{
+    color: gray;
+}
+
+/*************** pricing left section style ****************/
+.contactUs-section{
+    background: #F0F0F0;
+    padding: 50px 20px;
+}
+.contactUs-section .contact-section h3{
+    display: inline-block;
+    border-bottom: 5px solid #009688;
+    margin: 20px 0;
+    font-weight: normal;
+}
+.contactUs-section .contact-section h4{
+    margin: 10px 0;
+    font-weight: normal;
+}
+.contactUs-section .contact-section ul{
+    padding: 0;
+}
+.contactUs-section .contact-section ul li{
+    margin: 10px 0;
+}
+.contactUs-section .contact-section ul li i{
+    color: #009688;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+/*************** pricing right section style ****************/
+.form-box{
+    width: 95%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    padding: 20px;
+}
+.form-box form label{
+    margin: 5px;
+    font-size: 18px;
+}
+.form-box form input[type="text"],
+.form-box form input[type="email"]
+{
+    width: 100%;
+    padding-top: 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.form-box form input[type="checkbox"]{
+    width: 24px; 
+    height: 24px;
+    position: relative;
+    top: 6px;
+}
+.form-box form div{
+    margin-top: 15px;
+}
+.form-box form button{
+    float: right;
+}
+/*************** image section style ****************/
+.street-image{
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(50%);
+}
+
+/*************** footer style ****************/
+footer{
+    width: 100%;
+    padding: 40px 0 60px 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+footer .content h4{
+    font-weight: normal;
+}
+footer .content a{
+    color: #fff;
+}
+.goTop-icon{
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    font-size: 24px !important;
+    padding: 20px;
+    cursor: pointer;
+}
+.goTop-icon:hover{
+    background-color: gray;
+    color: #000;
+}
+/*.goTop{
+    opacity: 0;
+    background-color: #009688;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    position: absolute;
+    top: 40%;
+    right: 70px;
+}
+.goTop-icon:hover .goTop{
+    opacity: 1;
+}*/
+.social-networks{
+    margin: 15px 0;
+}
+.social-networks i{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #009688;
+}
+.social-networks i:hover{
+    background-color: gray;
+}
